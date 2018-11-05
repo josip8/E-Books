@@ -10,8 +10,8 @@ Some of the technologies used in this project are:
   - CSS Flexbox and CSS Grid
 ---------
 #### Installing
-You will need Postgresql database and [Node.js](https://nodejs.org/) installed on your pc.
-After cloning repository, rename `.env.example` file to `.env` and fill it with your info.
+You will need Postgresql database and [Node.js](https://nodejs.org/) installed on your pc.  
+After cloning repository, rename `.env.example` file to `.env` and fill it with your info.  
 To run application, first install all dependencies:
 ```sh
 $ npm install
