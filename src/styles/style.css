@@ -1,0 +1,796 @@
+#site {
+    background-color: white;
+}
+
+#site >  .app, .app1 {
+    background-color: #ba9077;
+    border-radius: 8px;
+}
+
+#site >  .app > .menu, .app1 > .menu {
+    grid-area:menu;
+    background-color:#191919;
+    padding: 5px 5px 5px 5px;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 8px;
+}
+
+#site > div > div.menu > a{
+width:100%;
+height:100%;
+}
+
+#site > div > div.menu > a > button{
+    background-color:#191919;
+    border: none;
+    color: #DFE2DB;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    border-radius: 4px;
+    padding:5px;
+    width: 100%;
+    height: 100%
+}
+
+#site >  .app > .menu > .dropdown, .app1 > .menu > .dropdown{
+width: 100%;
+}
+
+#site >  .app > .menu > .dropdown > button, .app1 > .menu > .dropdown > button{
+    background-color:#191919;
+    border: none;
+    color: #DFE2DB;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 4px;
+    height: 100%;
+    width: 100%;
+}
+
+#site >  .app > .menu > .dropdown > button:hover, .app1 > .menu > .dropdown > button:hover{   
+     background-color: #DFE2DB;
+    color:#191919;}
+
+#site >  .app > .menu > a > button:hover, #site > .app1 > .menu > a >  button:hover{
+    background-color: #DFE2DB;
+    color:#191919;
+}
+
+#site >  .app > .menu > .dropdown > .dropdown-content, .app1 > .menu > .dropdown > .dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border-radius: 4px;
+    z-index: 3;
+}
+
+.menu > .dropdown > .dropdown-content a{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    border-radius: 4px;
+}
+
+#site >  .app > .menu > .dropdown, .app1 > .menu > .dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+#site >  .app > .menu > .dropdown:hover .dropdown-content, .app1 > .menu > .dropdown:hover .dropdown-content {
+    display: block;
+}
+#site> .app > .menu > .dropdown:hover .dropbtn, #site> .app1 > .menu > .dropdown:hover .dropbtn{
+    background-color: #DFE2DB;
+    color:#191919;
+}
+#site> .app > .menu> .dropdown > .dropdown-content a:hover, #site> .app1 > .menu> .dropdown > .dropdown-content a:hover {
+    background-color:rgb(173, 170, 170);
+}
+
+#site > .app > .title, .app1 > .title {
+    grid-area:title;
+    background-color: #191919;
+    padding: 10px 10px 10px 10px;
+    font-size: 200%;
+    display: flex;
+    justify-content: space-between;
+    color:#FFFFFF;
+    border-radius: 8px;
+}
+
+#site >  .app > .title > .logo, .app1 > .title > .logo{
+    display: flex;
+    font-size:180%;
+}
+
+#site >  .app > .title > .login, .app1 > .title > .login{
+    display: flex;
+}
+
+
+#site >  .app > .title > .login > input, .app1 > .title > .login > input{
+display: flex;
+justify-content: flex-end;
+height: 40%;
+width: 100px;
+margin: 10px 10px 10px 10px;
+background: #f5f6fa;
+text-decoration-color: #f5f6fa;
+border-radius: 8px;
+}
+
+#site >  .app > .title > .login > button, .app1 > .title > .login > button {
+    background-color:#191919;
+    border: none;
+    color: #DFE2DB;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 4px;
+    height: 50px;
+    position:relative;
+   
+}
+#site > .app > .title > .login > button:hover, .app1> .title> .login > button:hover{
+    background-color: #DFE2DB;
+    color:#191919;
+}
+
+#site  >  .app > .search, .app1 > .search{
+    display:flex;
+    grid-area: search;
+    border-radius: 8px;
+}
+#site  >  .app > .search > input, .app1 > .search > input{
+    width: 95%;
+    height: 80%;
+    font-size: 140%;
+    position: relative;
+    font-variant-position: center;
+    border-radius: 8px;
+    border-color:#191919;
+    border-width: 4px;
+}
+
+#site >  .app > .navigate_top, .app1 > .navigate_top {
+    grid-area: navigate_top;
+    background-color: red;
+    padding: 10px 10px 10px 10px;   
+}
+#site >  .app > .main {
+    grid-area: main;
+    display: flex;
+    flex-wrap: wrap;  
+    padding: 10px 10px 10px 10px;
+    overflow: auto;
+    justify-content: flex-start;
+}
+
+#site >  .app > .main::-webkit-scrollbar-track, .app1 > .bookDetails::-webkit-scrollbar-track, .app1 > .bookDetails > .first > .descript::-webkit-scrollbar-track{
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: #F5F5F5;
+}
+
+#site >  .app > .main::-webkit-scrollbar, .app1 > .bookDetails::-webkit-scrollbar, .app1 > .bookDetails> .first > .descript::-webkit-scrollbar{
+    width: 5px;
+    height:0px;
+	background-color: #F5F5F5;
+}
+#site >  .app > .main::-webkit-scrollbar-thumb, .app1 > .bookDetails::-webkit-scrollbar-thumb, .app1 > .bookDetails > .first > .descript::-webkit-scrollbar-thumb{
+    border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #555;
+}
+
+#site >  .app > .main  > .item > a > label{
+    height: 19px;
+    color: black;
+    margin: 2px;
+}
+
+#site >  .app > .main > .item{
+    background-color: #8163eb;
+    border-radius: 8px;
+    height: 340px;
+    margin: 20px;
+}
+
+#site >  .app > .main > .item > a{  
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    width: 200px;
+    background-color:  #e7a137;
+    border-radius: 8px;
+}
+
+#site >  .app > .main > .item > a > img{
+height:75%;
+border-radius: 8px;
+}
+
+#site >  .app > .main > .item > .deleteOrEdit {
+    margin-top:10px;
+    display:flex;
+    justify-content: space-around;
+}
+
+#site >  .app > .main > .item > .deleteOrEdit > button{
+    background-color:#191919;
+    border: none;
+    color: #DFE2DB;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 4px;
+    position:relative;
+}
+
+#site >  .app > .main > .item > .deleteOrEdit > button:hover{
+    background-color: #DFE2DB;
+    color:#191919;
+}
+
+#site > .app1 > .bookDetails{
+    display: flex;
+    flex-direction: column;
+    grid-area: bookDetails;
+    margin:8px;
+    margin-left:40px;
+    overflow: auto;
+}
+
+#site > .app1 > .bookDetails > .first{
+display: flex;
+flex-direction: row;
+max-height: 500px;
+
+}
+
+#site > .app1 > .bookDetails > .first >  .image {
+    margin:15px;
+}
+
+#site > .app1 > .bookDetails > .first >  .image > button {
+    margin:10px;
+    width:100px;
+    height: 40px;
+    background-color:#0711a0;
+    border: none;
+    color: #DFE2DB;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 4px;
+}
+
+#site > .app1 > .bookDetails > .first> .image > button:hover{
+    background-color: #DFE2DB;
+    color:#191919;
+}
+
+#site > .app1 > .bookDetails> .first > .descript{
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    margin:15px;
+    overflow: auto;
+}
+#site > .app1 > .bookDetails > .first> .descript > .title {
+    font-size: 20px;
+    text-decoration: underline;
+    font-weight: bold;
+    margin:5px;
+    margin-left: 0px;
+}
+
+#site > .app1 > .bookDetails > .first > .image > .grades {
+    margin:5px;
+    font-size: 28px;
+    display: flex;
+    flex-direction: row;
+}
+
+#site > .app1 > .bookDetails > .comments > .title{
+    font-size: 120%;
+    font-weight: bold;
+}
+
+#site > .app1 > .bookDetails > .comments > .comment > textarea{
+    margin-top:5px;
+    width: 98%;
+    border-radius: 8px;
+}
+
+#site > .app1 > .bookDetails > .comments > .userComment {
+    background-color: #424141;
+    color:#DFE2DB;
+    padding:5px;
+    border-radius: 8px;
+    margin:5px;
+}
+
+#site >  .app > .navigate_bottom, .app1 > .navigate_bottom {
+    grid-area: navigate_bottom;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    background-color: #191919;
+    padding: 10px 10px 10px 10px;
+
+}
+
+#site >  .app > .navigate_bottom > .other > button, .navigate_bottom > .dropdown > button {
+    background-color:#191919;
+    border: none;
+    color: #DFE2DB;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 4px;
+    height:100%;
+}
+
+#site >  .app > .navigate_bottom > .other > button:hover, .app > .navigate_bottom > .dropdown > button:hover {
+    background-color: #DFE2DB;
+    color:#191919;
+}
+
+#site >  .app > .navigate_bottom > .dropdown > .dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border-radius: 4px;
+    z-index: 3;
+}
+
+#site> .app > .navigate_bottom > .dropdown > .dropdown-content a{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    border-radius: 4px;
+}
+
+#site >  .app > .navigate_bottom> .dropdown {
+    position: relative;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+#site >  .app > .navigate_bottom > .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+#site> .app > .navigate_bottom > .dropdown:hover .dropbtn{
+    background-color: #DFE2DB;
+    color:#191919;
+}
+
+.navigate_bottom> .dropdown > .dropdown-content a:hover{
+    background-color:rgb(197, 194, 194);
+}
+
+
+#site >  .app > .footer, .app1 > .footer {
+    grid-area: footer;
+    background-color:#000105;
+    padding: 10px 10px 10px 10px;
+    display: flex;
+    justify-content: center;
+    color:#DFE2DB;
+}
+
+#site >  .app > .wrap > .burger, .app1 > .wrap > .burger{
+    grid-area: burger;
+    background:#191919;
+	display:flex;
+	position: relative;
+    cursor:pointer;
+    width: 70px;
+    height:65px;
+    border-radius: 8px;
+}
+#site >  .app > .wrap > .burger > .lines, .app1 > .wrap > .burger > .lines{
+    display:flex;
+}
+
+#site >  .app > .wrap > .burger > .lines > .line, .app1 > .wrap > .burger > .lines > .line{
+	position: absolute;
+	height: 5px;
+    width:90%;
+    left:5%;
+	background:#DFE2DB;
+    border-radius:10px;
+    transition: all cubic-bezier(0.25, 0.1, 0.28, 1.54) 0.32s;
+	
+}
+.line1 {
+    top:19%;
+}
+.line2 {
+	top:49%;
+}
+
+.line3 {
+	top:79%;
+}
+
+.lines.closed > .line1 {
+    transform:rotate(45deg);
+    top:49%;
+}
+
+.closed > .line2, .closed > .line3 {
+	transform:rotate(-45deg);
+	top:49%;
+}
+
+
+#site >  .app > .wrap > .content, .app1 > .wrap > .content {
+    z-index: -1;
+    display:flex;
+    position: absolute;
+    background-color: #191919;
+    transition:  all ease-in-out 0.5s;
+}
+
+
+#site >  .app > .wrap > .content.show, .app1 > .wrap > .content.show {
+    position: absolute;
+    z-index: 2;
+    display: flex; 
+    transform:translate(32px,50px) scale(1.7,1.7); 
+}
+
+#site >  .app > .wrap > .content > .menu, .app1 > .wrap > .content > .menu{
+    padding: 10px 10px 10px 10px;
+    display:flex;
+    flex-direction: column;
+}
+
+#site >  .app > .wrap > .content > .menu > a > button, .app1 > .wrap > .content > .menu > a > button{
+    background-color: #191919; 
+    border: none;
+    color: #DFE2DB;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 4px;
+    width: 100%;
+    height: 100%;
+}
+
+
+#site > .app > .wrap > .content > .menu > a > button:hover, .app1 > .wrap > .content > .menu > a > button:hover{
+    background-color: #fff;
+    color:#191919;
+}
+
+.wrap > .content > .menu > .dropdown {
+    border-radius: 8px;
+    width: 100%;
+    height: 100%;
+}
+
+.wrap > .content > .menu > .dropdown > button {
+    background-color:#191919;
+    border: none;
+    color: #DFE2DB;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 4px;
+    padding: 5px;
+    width: 100%;
+    height: 100%;
+}
+
+.wrap > .content > .menu > .dropdown > .dropdown-content {
+    display: none;
+    position: absolute;
+    left:50px;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 4px;
+}
+.wrap > .content.show > .menu > .dropdown > .dropdown-content a{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    border-radius:4px;
+} 
+.wrap > .content.show > .menu > .dropdown > .dropdown-content a:hover{
+    background-color:rgb(197, 194, 194);
+}
+
+.wrap > .content.show > .menu > .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.wrap > .content.show > .menu > .dropdown:hover .dropbtn{
+    background-color: #DFE2DB;
+    color:#191919;
+}
+
+
+
+
+#site > .app  {
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: 70px 70vh 70px 100px;  
+    grid-template-areas:
+        "burger search search search search search search search"
+        "main main main main main main main main "
+        "navigate_bottom navigate_bottom navigate_bottom navigate_bottom navigate_bottom navigate_bottom navigate_bottom navigate_bottom"
+        "footer footer footer footer footer footer footer footer" ;
+    grid-gap: 5px;
+}
+
+#site > .app1  {
+    display: grid;
+    grid-template-columns:  repeat(8, 1fr);
+    grid-template-rows: 70px 80vh 100px;
+    grid-template-areas:
+        "burger search search search search search search search"
+        "bookDetails bookDetails bookDetails bookDetails bookDetails bookDetails bookDetails bookDetails"
+        "footer footer footer footer footer footer footer footer" ;
+    grid-gap: 5px;
+}
+
+@media screen and (min-width: 650px){
+    #site >  .app > .wrap, .app1 > .wrap{
+        display: none;
+    }
+    #site > .app1{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 70px 50px 80vh 100px;    
+        grid-template-areas:
+            "title title title title title"
+            "menu menu menu menu search"
+            "bookDetails bookDetails bookDetails bookDetails bookDetails "
+            "footer footer footer footer footer" ;
+        grid-gap: 5px;}
+
+    #site > .app{
+    margin:auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 70px 50px 75vh 70px 100px;
+    grid-template-areas:
+        "title title title title title"
+        "menu menu menu menu search"
+        "main main main main main "
+        "navigate_bottom navigate_bottom navigate_bottom navigate_bottom navigate_bottom"
+        "footer footer footer footer footer" ;
+    grid-gap: 5px;
+    }
+}
+
+@media screen and (max-width: 650px){
+    #site > .app > .title, .app1 > .title{
+        display: none;
+    }
+    #site > .app > .menu, .app1 > .menu{
+        display: none;
+    }
+    #site > .app1 > .bookDetails > .first {
+        display:flex;
+        flex-direction: column;
+        min-height:900px;
+    }
+    #site > .app1 > .bookDetails > .first > .descript {
+        min-height: 80px;
+        margin-bottom: 60px;
+    }
+    #site >  .app > .main {
+        grid-area: main;
+        display: flex;
+        flex-wrap: wrap;  
+        padding: 10px 10px 10px 10px;
+        overflow: auto;
+        justify-content: space-evenly;
+    }
+}
+
+.register > form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 500px;
+    width: 100%;
+    margin-top:20px;
+}
+
+.register > form > label {
+    padding: 5px;
+    padding-bottom: 0px;
+    padding-top:0px;
+    display: flex;
+    flex-direction: column;
+}
+
+.register > form > label > input {
+    margin-bottom: 10px;
+    border-radius: 8px;
+    height: 20px;
+}
+
+.register > form > input{
+    margin-top:10px;
+    color: white;
+    background-color:black;
+    height: 50px;
+    width: 100px;
+    border-radius: 8px;
+}
+
+.register > form > input:hover{
+    background-color: #DFE2DB;
+    color:#191919;
+}
+
+.addNewBook > form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 500px;
+    width: 100%;
+    margin-top:30px;
+}
+
+.addNewBook > form > label {
+    padding: 5px;
+    padding-bottom: 0px;
+    padding-top:0px;
+    display: flex;
+    flex-direction: column;
+}
+.addNewBook > form > label > input {
+    margin-bottom: 10px;
+    border-radius: 8px;
+    height: 20px;
+}
+
+.addNewBook > form > input{
+    margin-top:10px;
+    color: white;
+    background-color:black;
+    height: 50px;
+    width: 100px;
+    border-radius: 8px;
+}
+.addNewBook > form > input:hover{
+    background-color: #DFE2DB;
+    color:#191919;
+}
+
+.editBook {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.editBook > form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 500px;
+    width: 100%;
+    margin-top:30px;
+}
+
+.editBook > form > label {
+    padding: 5px;
+    padding-bottom: 0px;
+    padding-top:0px;
+    display: flex;
+    flex-direction: column;
+}
+.editBook > form > label > input {
+    margin-bottom: 10px;
+    border-radius: 8px;
+    height: 20px;
+}
+
+.editBook > form > input{
+    margin-top:10px;
+    color: white;
+    background-color:black;
+    height: 50px;
+    width: 100px;
+    border-radius: 8px;
+}
+.editBook > form > input:hover{
+    background-color: #DFE2DB;
+    color:#191919;
+}
+
+#site > .app1 > .bookDetails > .first >  .image > .grades > label{
+    margin-left: 10px;
+    margin-right: 8px;
+    font-size: 90%;
+}
+
+#site > .app > .title > .userInfo, .app1 > .title > .userInfo{
+    font-size: 80%;
+}
+
+#site > .app > .title > .userInfo > button, .app1 > .title > .userInfo > button{
+    background-color:#191919;
+    border: none;
+    color: #DFE2DB;
+    font-size: 16px;
+    border-radius: 4px;
+    height: 50px;
+    margin-left: 30px;
+    position: relative;
+}
+#site > .app > .title > .userInfo > button:hover, .app1 > .title > .userInfo > button:hover{
+    background-color: #DFE2DB;
+    color:#191919;
+}
+
+#site > .app1 > .bookDetails > .comments > .userComment > button {
+    background-color:#fc0808;
+    border: none;
+    color: #DFE2DB;
+    font-size: 16px;
+    border-radius: 4px;
+    margin-top:5px;
+    position: relative;
+}
+#site > .app1 > .bookDetails > .comments > .userComment > button:hover {
+    background-color:#DFE2DB;
+    color: #fc0808;
+}
+
+#site > .app1 > .bookDetails > .comments > .comment > input {
+    background-color:#0711a0;
+    border: none;
+    color: #DFE2DB;
+    font-size: 16px;
+    border-radius: 4px;
+    margin-top:5px;
+    position: relative;
+}
+#site > .app1 > .bookDetails > .comments > .comment > input:hover{
+    background-color:#DFE2DB;
+    color: #191919;
+}
+
+:any-link{
+    text-decoration:none;
+}
+
+a:-webkit-any-link{
+    text-decoration: none;
+    text-decoration-color: #000105;
+    color:#DFE2DB;
+}
+
+a:-webkit-any-link:hover{
+    background-color:#DFE2DB;
+    color: #191919;
+}
